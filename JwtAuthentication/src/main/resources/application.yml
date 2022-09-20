@@ -1,0 +1,17 @@
+server:
+  port: 8090
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: jwtdb
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+
+    hibernate: ERROR
