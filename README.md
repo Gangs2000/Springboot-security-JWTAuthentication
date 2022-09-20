@@ -6,7 +6,7 @@ Of course, It requires a lot of configuration files but final result will be mor
 
 There are five rest end points, In which two api endpoints are permitted to all since application requires to store new user data **("/jwt/add-new-user")** and authenticating exisiting user data **("/jwt/authentication")**.
 
-To access rest of the three endpoints ( "/jwt/secure-api/one, /jwt/secure-api/two, /jwt/secure-api/three" ) user must their userId and password, this userID and password will go to provider manager->authentication provider->jwt authentication provider ( Here token will be generated based on given userID and password using HSA256 algorithm and it verifies ) -> Once verification is done, Security context holder will set this authentication as valid token further it allows to access all the secured end points.
+To access rest of the three endpoints **( "/jwt/secure-api/one, /jwt/secure-api/two, /jwt/secure-api/three" )** user must their userId and password, this userID and password will go to provider manager->authentication provider->jwt authentication provider ( Here token will be generated based on given userID and password using HSA256 algorithm and it verifies ) -> Once verification is done, Security context holder will set this authentication as valid token further it allows to access all the secured end points.
 
 JWT token is valid upto 10 hours, so the user can access all rest api endpoints by passing token info to header. Once token gets expired user will have to authenticate again by passing username and password to get new JWT token.
 
